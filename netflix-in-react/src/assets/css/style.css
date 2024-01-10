@@ -1,0 +1,16 @@
+body {
+  background-color: #141414;
+}
+
+img:hover {
+  /* width: 400px;
+  height: 400px; */
+  /* transition: scale 1.2; */
+  scale: 1.1;
+}
+
+button:hover {
+  scale: 1.1;
+  background-color: white;
+  color: black;
+}
