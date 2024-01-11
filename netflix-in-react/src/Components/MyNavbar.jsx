@@ -13,7 +13,7 @@ const MyNavbar = () => {
   //   location.pathname === "/home" ||
   //   location.pathname === "/tv-shows" ||
   //   location.pathname === "/movies" ||
-  //   location.pathname === "/movies/details/:movieID" ||
+  //   location.pathname === "/movies/details/:omdbID" ||
   //   location.pathname === "/*";
 
   // ignorerà la visualizzazione della navbar per tutte le rotte non valide

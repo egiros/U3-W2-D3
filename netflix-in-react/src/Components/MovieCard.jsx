@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const MovieCard = ({ movie }) => {
   return (
     <Col>
-      <Link to={`/movies/details/${movie.omdbID}`} style={{ cursor: "pointer" }}>
+      <Link to={`/movies/details/${movie.imdbID}`} style={{ cursor: "pointer" }}>
         <img
           style={{ height: "350px", objectFit: "cover" }}
           className="img-fluid rounded-2 shadow"

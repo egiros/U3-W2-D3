@@ -9,7 +9,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyHomePage from "./Components/MyHomePage";
 import MyTvShow from "./Components/MyTvShow";
 import NotFound from "./Components/NotFound";
-import Detailts from "./Components/Details";
 import Details from "./Components/Details";
 
 function App() {
@@ -23,8 +22,8 @@ function App() {
           <Route path="/home" element={<MyHomePage />} />
           <Route path="/tv-shows" element={<MyTvShow />} />
           <Route path="/movies" element={<MovieGallery category="Transformers" />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
-          <Route path="movies/details/:movieID" element={<Details />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="movies/details/:omdbID" element={<Details />} />
         </Routes>
         <MyFooter></MyFooter>
       </BrowserRouter>
