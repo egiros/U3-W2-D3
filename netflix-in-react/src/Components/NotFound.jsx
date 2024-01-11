@@ -11,7 +11,7 @@ const NotFound = (props) => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigate("/");
+      navigate("/home");
     }, 10000);
   });
 
@@ -19,14 +19,14 @@ const NotFound = (props) => {
     <div className="text-center mt-5 mb-5">
       <h1 className="display-3 text-danger">404 - Risorsa non trovata!</h1>
       <p className="lead">
-        L'informazione che cercavi non è disponibile, <Link to="/">torna alla home</Link>.
+        L'informazione che cercavi non è disponibile, <Link to="/home">torna alla home</Link>.
       </p>
-      <Link to="/" className="btn btn-primary">
+      <Link to="/home" className="btn btn-primary">
         Torna alla Homepage
       </Link>
 
-      <Button variant="secondary" onClick={() => navigate("/prenotazioni")}>
-        Vai alle prenotazioni (useNavigate)
+      <Button variant="secondary" onClick={() => navigate("/home")}>
+        Vai alle preferenze (useNavigate)
       </Button>
     </div>
   );

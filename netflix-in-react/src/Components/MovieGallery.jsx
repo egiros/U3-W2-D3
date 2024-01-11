@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 const MovieGallery = ({ category }) => {
   const [movies, setMovies] = useState([]);
